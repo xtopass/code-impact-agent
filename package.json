@@ -1,0 +1,35 @@
+{
+  "name": "code-impact-agent",
+  "version": "1.0.0",
+  "description": "代码影响范围调查 — 多Agent协作架构系统",
+  "main": "src/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test tests/*.test.js",
+    "analyze": "node src/cli.js analyze"
+  },
+  "keywords": [
+    "code-impact",
+    "agent",
+    "langgraph",
+    "dependency-analysis",
+    "puppet"
+  ],
+  "author": "xtopass",
+  "license": "MIT",
+  "dependencies": {
+    "langchain": "^0.3.0",
+    "langgraph": "^0.2.0",
+    "@langchain/core": "^0.3.0",
+    "cheerio": "^1.0.0",
+    "graphlib": "^2.1.8",
+    "tree-sitter": "^0.21.0",
+    "gitdiff-parser": "^1.0.0"
+  },
+  "devDependencies": {
+    "prettier": "^3.0.0",
+    "jest": "^29.0.0"
+  }
+}

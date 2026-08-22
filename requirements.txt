@@ -1,0 +1,28 @@
+# 代码影响范围调查Agent
+# requirements.txt
+
+# 核心依赖
+langchain>=0.3.0
+langgraph>=0.2.0
+langchain-core>=0.3.0
+
+# 工具链
+gitdiff-parser>=1.0.0
+tree-sitter>=0.21.0
+semgrep>=1.0.0
+
+# 数据处理
+networkx>=3.0.0
+graphlib-backport>=1.0.0; python_version<"3.9"
+
+# 配置解析
+pyyaml>=6.0
+click>=8.0.0
+
+# 测试
+pytest>=7.0.0
+pytest-asyncio>=0.21.0
+
+# 可选: LLM支持（如需语义分析）
+# langchain-anthropic>=0.1.0
+# langchain-openai>=0.1.0

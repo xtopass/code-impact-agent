@@ -1,0 +1,22 @@
+# 忽略Python缓存
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+
+# 忽略IDE配置
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 忽略案例数据（可选提交）
+cases.json
+
+# 忽略临时文件
+*.tmp
+*.md~
